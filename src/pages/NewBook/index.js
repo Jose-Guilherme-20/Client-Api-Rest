@@ -23,7 +23,9 @@ export default function NewBook() {
           <input type="date"></input>
           <input placeholder="Price"></input>
 
-          <button className="button" type="submit"></button>
+          <button className="button" type="submit">
+            Add
+          </button>
         </form>
       </div>
     </div>

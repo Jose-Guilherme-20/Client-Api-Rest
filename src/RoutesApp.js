@@ -10,7 +10,7 @@ export default function RoutesApp() {
     <Routes>
       <Route path="/" element={<Login />} />
       <Route path="/books" element={<Book />} />
-      <Route path="/books/new" element={<NewBook />} />
+      <Route path="/book/new" element={<NewBook />} />
     </Routes>
   );
 }

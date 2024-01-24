@@ -12,7 +12,7 @@ export default function Book() {
         <span>
           Welcome, <strong>José</strong>!
         </span>
-        <Link className="button" to="book/new">
+        <Link className="button" to="/book/new">
           Add new Book
         </Link>
         <button type="button">

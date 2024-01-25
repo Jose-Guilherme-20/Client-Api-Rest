@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import "./style.css";
 import LogoImage from "../../assets/logo.svg";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
 import api from "../../services/Api";
 
 export default function NewBook() {
+  const [id, setId] = useState(null);
   const [author, setAuthor] = useState("");
   const [title, setTitle] = useState("");
   const [lauchDate, setLauchDate] = useState("");
   const [price, setPrice] = useState("");
+  const { bookId } = useParams();
 
   const navigate = useNavigate();
   async function CreateBook(e) {
